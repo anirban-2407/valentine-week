@@ -27,14 +27,17 @@
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.95);
   color: #ff2e63;
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
   display: none;
-  max-width: 600px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.4);
 
-  z-index: 9999;   /* ⭐ IMPORTANT — brings popup to front */
+  width: 90%;          /* makes it wider on mobile */
+  max-width: 800px;    /* ⭐ increased from 600px → 800px */
+
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  z-index: 9999;
 }
+
 
     body {
       background: radial-gradient(circle at top, #3b1d1d, #120909);
