@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DAY NAME</title>
+<link rel="stylesheet" href="../valentine.css" />
+</head>
+<body>
+
+
+<div class="container">
+<h1>DAY TITLE</h1>
+<p>ROMANTIC MESSAGE</p>
+
+
+<p id="countdown"></p>
+
+
+<button onclick="toggleMusic()">🎵 Play / Pause Music</button>
+<button onclick="openLetter()">💌 Secret Letter</button>
+</div>
+
+
+<audio id="bgMusic" loop>
+<source src="../music/MUSIC_FILE.mp3" type="audio/mpeg">
+</audio>
+
+
+<div id="popup" class="popup">
+<h2>My Love ❤️</h2>
+<p>
+You are the most beautiful part of my life.
+Every heartbeat whispers your name.
+I love you forever. 💖
+</p>
+<button onclick="closeLetter()">Close</button>
+</div>
+
+
+<script src="../valentine.js"></script>
+</body>
+</html>

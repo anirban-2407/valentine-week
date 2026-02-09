@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Day Question 🍫</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #3b1d1d, #120909);
+      font-family: "Poppins", sans-serif;
+      color: #ffe4e1;
+      overflow: hidden;
+    }
+
+    .box {
+      text-align: center;
+      padding: 40px;
+      border-radius: 20px;
+      border: 2px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      margin: 10px;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #ff4b7d;
+      color: white;
+    }
+
+    .no {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>Do you want to celebrate Chocolate Day with me? 🍫💖</h1>
+
+  <button class="yes" onclick="goToChocolate()">Yes 💕</button>
+  <button class="no" id="noBtn">No 🙈</button>
+</div>
+
+<script>
+function goToChocolate() {
+  window.location.href = "chocolate.html";
+}
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+  const x = Math.random() * (window.innerWidth - 100);
+  const y = Math.random() * (window.innerHeight - 50);
+
+  noBtn.style.position = "absolute";
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>

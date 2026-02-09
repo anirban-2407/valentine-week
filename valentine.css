@@ -1,0 +1,75 @@
+body {
+}
+
+
+h1 {
+font-size: 3em;
+animation: fadeIn 2s ease-in-out;
+}
+
+
+p {
+font-size: 1.4em;
+}
+
+
+button {
+margin-top: 20px;
+padding: 12px 25px;
+border: none;
+border-radius: 25px;
+font-size: 1.2em;
+background: #ff4b7d;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+button:hover {
+transform: scale(1.1);
+background: #ff2e63;
+}
+
+
+/* Floating hearts */
+.heart {
+position: fixed;
+bottom: -10px;
+color: #ff4b7d;
+font-size: 20px;
+animation: floatUp 6s linear infinite;
+}
+
+
+@keyframes floatUp {
+0% { transform: translateY(0); opacity: 1; }
+100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Love letter popup */
+.popup {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: white;
+color: #ff2e63;
+padding: 30px;
+border-radius: 20px;
+display: none;
+max-width: 300px;
+box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+.popup button {
+background: #ff2e63;
+}
